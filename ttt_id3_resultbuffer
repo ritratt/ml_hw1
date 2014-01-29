@@ -1,0 +1,427 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.Id3 
+Relation:     tic-tac-toe
+Instances:    958
+Attributes:   10
+              top-left-square
+              top-middle-square
+              top-right-square
+              middle-left-square
+              middle-middle-square
+              middle-right-square
+              bottom-left-square
+              bottom-middle-square
+              bottom-right-square
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Id3
+
+
+middle-middle-square = b
+|  top-left-square = b
+|  |  bottom-right-square = b: null
+|  |  bottom-right-square = o: negative
+|  |  bottom-right-square = x: positive
+|  top-left-square = o
+|  |  bottom-right-square = b: negative
+|  |  bottom-right-square = o: negative
+|  |  bottom-right-square = x
+|  |  |  top-right-square = b
+|  |  |  |  bottom-left-square = b: null
+|  |  |  |  bottom-left-square = o: negative
+|  |  |  |  bottom-left-square = x: positive
+|  |  |  top-right-square = o
+|  |  |  |  top-middle-square = b: positive
+|  |  |  |  top-middle-square = o: negative
+|  |  |  |  top-middle-square = x
+|  |  |  |  |  middle-right-square = b: positive
+|  |  |  |  |  middle-right-square = o: positive
+|  |  |  |  |  middle-right-square = x: negative
+|  |  |  top-right-square = x
+|  |  |  |  middle-right-square = b
+|  |  |  |  |  top-middle-square = b: negative
+|  |  |  |  |  top-middle-square = o: positive
+|  |  |  |  |  top-middle-square = x: negative
+|  |  |  |  middle-right-square = o
+|  |  |  |  |  top-middle-square = b: positive
+|  |  |  |  |  top-middle-square = o: positive
+|  |  |  |  |  top-middle-square = x: negative
+|  |  |  |  middle-right-square = x: positive
+|  top-left-square = x
+|  |  bottom-right-square = b: positive
+|  |  bottom-right-square = o
+|  |  |  top-right-square = b
+|  |  |  |  bottom-left-square = b: null
+|  |  |  |  bottom-left-square = o: negative
+|  |  |  |  bottom-left-square = x: positive
+|  |  |  top-right-square = o
+|  |  |  |  middle-right-square = b: positive
+|  |  |  |  middle-right-square = o: negative
+|  |  |  |  middle-right-square = x
+|  |  |  |  |  top-middle-square = b: positive
+|  |  |  |  |  top-middle-square = o: positive
+|  |  |  |  |  top-middle-square = x: negative
+|  |  |  top-right-square = x
+|  |  |  |  top-middle-square = b
+|  |  |  |  |  middle-right-square = b: negative
+|  |  |  |  |  middle-right-square = o: positive
+|  |  |  |  |  middle-right-square = x: negative
+|  |  |  |  top-middle-square = o
+|  |  |  |  |  middle-right-square = b: positive
+|  |  |  |  |  middle-right-square = o: positive
+|  |  |  |  |  middle-right-square = x: negative
+|  |  |  |  top-middle-square = x: positive
+|  |  bottom-right-square = x: positive
+middle-middle-square = o
+|  top-left-square = b
+|  |  bottom-right-square = b: negative
+|  |  bottom-right-square = o: negative
+|  |  bottom-right-square = x
+|  |  |  top-middle-square = b
+|  |  |  |  bottom-middle-square = b
+|  |  |  |  |  middle-left-square = b: positive
+|  |  |  |  |  middle-left-square = o
+|  |  |  |  |  |  middle-right-square = b: null
+|  |  |  |  |  |  middle-right-square = o: negative
+|  |  |  |  |  |  middle-right-square = x: positive
+|  |  |  |  |  middle-left-square = x: negative
+|  |  |  |  bottom-middle-square = o: positive
+|  |  |  |  bottom-middle-square = x
+|  |  |  |  |  bottom-left-square = b: negative
+|  |  |  |  |  bottom-left-square = o
+|  |  |  |  |  |  top-right-square = b: null
+|  |  |  |  |  |  top-right-square = o: negative
+|  |  |  |  |  |  top-right-square = x: positive
+|  |  |  |  |  bottom-left-square = x: positive
+|  |  |  top-middle-square = o
+|  |  |  |  bottom-middle-square = b: positive
+|  |  |  |  bottom-middle-square = o: negative
+|  |  |  |  bottom-middle-square = x
+|  |  |  |  |  bottom-left-square = b: positive
+|  |  |  |  |  bottom-left-square = o
+|  |  |  |  |  |  top-right-square = b: null
+|  |  |  |  |  |  top-right-square = o: negative
+|  |  |  |  |  |  top-right-square = x: positive
+|  |  |  |  |  bottom-left-square = x: positive
+|  |  |  top-middle-square = x
+|  |  |  |  middle-left-square = b
+|  |  |  |  |  middle-right-square = b: negative
+|  |  |  |  |  middle-right-square = o: positive
+|  |  |  |  |  middle-right-square = x
+|  |  |  |  |  |  top-right-square = b: null
+|  |  |  |  |  |  top-right-square = o: negative
+|  |  |  |  |  |  top-right-square = x: positive
+|  |  |  |  middle-left-square = o
+|  |  |  |  |  middle-right-square = b: positive
+|  |  |  |  |  middle-right-square = o: negative
+|  |  |  |  |  middle-right-square = x
+|  |  |  |  |  |  top-right-square = b: null
+|  |  |  |  |  |  top-right-square = o: negative
+|  |  |  |  |  |  top-right-square = x: positive
+|  |  |  |  middle-left-square = x: negative
+|  top-left-square = o
+|  |  bottom-right-square = b: negative
+|  |  bottom-right-square = o: negative
+|  |  bottom-right-square = x
+|  |  |  top-middle-square = b
+|  |  |  |  top-right-square = b: positive
+|  |  |  |  top-right-square = o
+|  |  |  |  |  bottom-left-square = b: null
+|  |  |  |  |  bottom-left-square = o: negative
+|  |  |  |  |  bottom-left-square = x: positive
+|  |  |  |  top-right-square = x: positive
+|  |  |  top-middle-square = o
+|  |  |  |  top-right-square = b
+|  |  |  |  |  bottom-middle-square = b: null
+|  |  |  |  |  bottom-middle-square = o: negative
+|  |  |  |  |  bottom-middle-square = x: positive
+|  |  |  |  top-right-square = o: negative
+|  |  |  |  top-right-square = x
+|  |  |  |  |  bottom-middle-square = b: positive
+|  |  |  |  |  bottom-middle-square = o: negative
+|  |  |  |  |  bottom-middle-square = x: positive
+|  |  |  top-middle-square = x
+|  |  |  |  bottom-left-square = b
+|  |  |  |  |  middle-right-square = b: null
+|  |  |  |  |  middle-right-square = o: negative
+|  |  |  |  |  middle-right-square = x: positive
+|  |  |  |  bottom-left-square = o
+|  |  |  |  |  bottom-middle-square = b
+|  |  |  |  |  |  top-right-square = b: null
+|  |  |  |  |  |  top-right-square = o: negative
+|  |  |  |  |  |  top-right-square = x: positive
+|  |  |  |  |  bottom-middle-square = o: positive
+|  |  |  |  |  bottom-middle-square = x: negative
+|  |  |  |  bottom-left-square = x
+|  |  |  |  |  bottom-middle-square = b: negative
+|  |  |  |  |  bottom-middle-square = o
+|  |  |  |  |  |  middle-left-square = b: null
+|  |  |  |  |  |  middle-left-square = o: positive
+|  |  |  |  |  |  middle-left-square = x: negative
+|  |  |  |  |  bottom-middle-square = x: positive
+|  top-left-square = x
+|  |  top-right-square = b
+|  |  |  middle-left-square = b
+|  |  |  |  middle-right-square = b: negative
+|  |  |  |  middle-right-square = o: positive
+|  |  |  |  middle-right-square = x: negative
+|  |  |  middle-left-square = o
+|  |  |  |  middle-right-square = b: positive
+|  |  |  |  middle-right-square = o: negative
+|  |  |  |  middle-right-square = x: negative
+|  |  |  middle-left-square = x
+|  |  |  |  bottom-left-square = b: negative
+|  |  |  |  bottom-left-square = o: negative
+|  |  |  |  bottom-left-square = x: positive
+|  |  top-right-square = o
+|  |  |  bottom-left-square = b: negative
+|  |  |  bottom-left-square = o: negative
+|  |  |  bottom-left-square = x
+|  |  |  |  middle-left-square = b
+|  |  |  |  |  top-middle-square = b: positive
+|  |  |  |  |  top-middle-square = o
+|  |  |  |  |  |  middle-right-square = b: positive
+|  |  |  |  |  |  middle-right-square = o: null
+|  |  |  |  |  |  middle-right-square = x: negative
+|  |  |  |  |  top-middle-square = x: negative
+|  |  |  |  middle-left-square = o
+|  |  |  |  |  top-middle-square = b: positive
+|  |  |  |  |  top-middle-square = o: positive
+|  |  |  |  |  top-middle-square = x: negative
+|  |  |  |  middle-left-square = x: positive
+|  |  top-right-square = x
+|  |  |  top-middle-square = b
+|  |  |  |  bottom-middle-square = b
+|  |  |  |  |  bottom-left-square = b: negative
+|  |  |  |  |  bottom-left-square = o: positive
+|  |  |  |  |  bottom-left-square = x
+|  |  |  |  |  |  middle-left-square = b: null
+|  |  |  |  |  |  middle-left-square = o: negative
+|  |  |  |  |  |  middle-left-square = x: positive
+|  |  |  |  bottom-middle-square = o
+|  |  |  |  |  middle-left-square = b: positive
+|  |  |  |  |  middle-left-square = o
+|  |  |  |  |  |  middle-right-square = b: null
+|  |  |  |  |  |  middle-right-square = o: negative
+|  |  |  |  |  |  middle-right-square = x: positive
+|  |  |  |  |  middle-left-square = x
+|  |  |  |  |  |  middle-right-square = b: positive
+|  |  |  |  |  |  middle-right-square = o: positive
+|  |  |  |  |  |  middle-right-square = x: negative
+|  |  |  |  bottom-middle-square = x: negative
+|  |  |  top-middle-square = o
+|  |  |  |  bottom-middle-square = b
+|  |  |  |  |  middle-left-square = b: positive
+|  |  |  |  |  middle-left-square = o
+|  |  |  |  |  |  middle-right-square = b: null
+|  |  |  |  |  |  middle-right-square = o: negative
+|  |  |  |  |  |  middle-right-square = x: positive
+|  |  |  |  |  middle-left-square = x: positive
+|  |  |  |  bottom-middle-square = o: negative
+|  |  |  |  bottom-middle-square = x
+|  |  |  |  |  bottom-left-square = b: negative
+|  |  |  |  |  bottom-left-square = o
+|  |  |  |  |  |  middle-left-square = b: null
+|  |  |  |  |  |  middle-left-square = o: positive
+|  |  |  |  |  |  middle-left-square = x: negative
+|  |  |  |  |  bottom-left-square = x
+|  |  |  |  |  |  middle-left-square = b: null
+|  |  |  |  |  |  middle-left-square = o: negative
+|  |  |  |  |  |  middle-left-square = x: positive
+|  |  |  top-middle-square = x: positive
+middle-middle-square = x
+|  top-left-square = b
+|  |  bottom-right-square = b: positive
+|  |  bottom-right-square = o
+|  |  |  middle-right-square = b
+|  |  |  |  bottom-left-square = b: positive
+|  |  |  |  bottom-left-square = o
+|  |  |  |  |  bottom-middle-square = b: null
+|  |  |  |  |  bottom-middle-square = o: negative
+|  |  |  |  |  bottom-middle-square = x: positive
+|  |  |  |  bottom-left-square = x: positive
+|  |  |  middle-right-square = o
+|  |  |  |  top-right-square = b: positive
+|  |  |  |  top-right-square = o: negative
+|  |  |  |  top-right-square = x
+|  |  |  |  |  bottom-left-square = b: positive
+|  |  |  |  |  bottom-left-square = o
+|  |  |  |  |  |  middle-left-square = b: positive
+|  |  |  |  |  |  middle-left-square = o: null
+|  |  |  |  |  |  middle-left-square = x: negative
+|  |  |  |  |  bottom-left-square = x: positive
+|  |  |  middle-right-square = x
+|  |  |  |  middle-left-square = b
+|  |  |  |  |  top-middle-square = b: negative
+|  |  |  |  |  top-middle-square = o: positive
+|  |  |  |  |  top-middle-square = x
+|  |  |  |  |  |  top-right-square = b: negative
+|  |  |  |  |  |  top-right-square = o: positive
+|  |  |  |  |  |  top-right-square = x: null
+|  |  |  |  middle-left-square = o
+|  |  |  |  |  bottom-left-square = b: positive
+|  |  |  |  |  bottom-left-square = o
+|  |  |  |  |  |  top-right-square = b: positive
+|  |  |  |  |  |  top-right-square = o: null
+|  |  |  |  |  |  top-right-square = x: negative
+|  |  |  |  |  bottom-left-square = x: positive
+|  |  |  |  middle-left-square = x: positive
+|  |  bottom-right-square = x: positive
+|  top-left-square = o
+|  |  bottom-right-square = b
+|  |  |  top-middle-square = b
+|  |  |  |  middle-left-square = b: positive
+|  |  |  |  middle-left-square = o
+|  |  |  |  |  bottom-left-square = b: null
+|  |  |  |  |  bottom-left-square = o: negative
+|  |  |  |  |  bottom-left-square = x: positive
+|  |  |  |  middle-left-square = x: positive
+|  |  |  top-middle-square = o
+|  |  |  |  top-right-square = b: positive
+|  |  |  |  top-right-square = o: negative
+|  |  |  |  top-right-square = x
+|  |  |  |  |  bottom-left-square = b: positive
+|  |  |  |  |  bottom-left-square = o
+|  |  |  |  |  |  middle-left-square = b: null
+|  |  |  |  |  |  middle-left-square = o: negative
+|  |  |  |  |  |  middle-left-square = x: positive
+|  |  |  |  |  bottom-left-square = x: positive
+|  |  |  top-middle-square = x
+|  |  |  |  bottom-middle-square = b
+|  |  |  |  |  top-right-square = b: negative
+|  |  |  |  |  top-right-square = o: positive
+|  |  |  |  |  top-right-square = x
+|  |  |  |  |  |  middle-right-square = b: negative
+|  |  |  |  |  |  middle-right-square = o: positive
+|  |  |  |  |  |  middle-right-square = x: null
+|  |  |  |  bottom-middle-square = o
+|  |  |  |  |  middle-left-square = b: positive
+|  |  |  |  |  middle-left-square = o
+|  |  |  |  |  |  middle-right-square = b: positive
+|  |  |  |  |  |  middle-right-square = o: null
+|  |  |  |  |  |  middle-right-square = x: negative
+|  |  |  |  |  middle-left-square = x: positive
+|  |  |  |  bottom-middle-square = x: positive
+|  |  bottom-right-square = o
+|  |  |  top-right-square = b: positive
+|  |  |  top-right-square = o
+|  |  |  |  top-middle-square = b
+|  |  |  |  |  middle-right-square = b: null
+|  |  |  |  |  middle-right-square = o: negative
+|  |  |  |  |  middle-right-square = x: positive
+|  |  |  |  top-middle-square = o: negative
+|  |  |  |  top-middle-square = x
+|  |  |  |  |  middle-right-square = b: positive
+|  |  |  |  |  middle-right-square = o: negative
+|  |  |  |  |  middle-right-square = x: positive
+|  |  |  top-right-square = x
+|  |  |  |  bottom-left-square = b: positive
+|  |  |  |  bottom-left-square = o
+|  |  |  |  |  middle-left-square = b
+|  |  |  |  |  |  middle-right-square = b: positive
+|  |  |  |  |  |  middle-right-square = o: null
+|  |  |  |  |  |  middle-right-square = x: negative
+|  |  |  |  |  middle-left-square = o: negative
+|  |  |  |  |  middle-left-square = x
+|  |  |  |  |  |  middle-right-square = b: negative
+|  |  |  |  |  |  middle-right-square = o: positive
+|  |  |  |  |  |  middle-right-square = x: positive
+|  |  |  |  bottom-left-square = x: positive
+|  |  bottom-right-square = x
+|  |  |  top-right-square = b
+|  |  |  |  middle-left-square = b: positive
+|  |  |  |  middle-left-square = o
+|  |  |  |  |  bottom-left-square = b: positive
+|  |  |  |  |  bottom-left-square = o: negative
+|  |  |  |  |  bottom-left-square = x: positive
+|  |  |  |  middle-left-square = x: positive
+|  |  |  top-right-square = o
+|  |  |  |  top-middle-square = b
+|  |  |  |  |  middle-left-square = b: positive
+|  |  |  |  |  middle-left-square = o
+|  |  |  |  |  |  middle-right-square = b: positive
+|  |  |  |  |  |  middle-right-square = o: null
+|  |  |  |  |  |  middle-right-square = x: negative
+|  |  |  |  |  middle-left-square = x: positive
+|  |  |  |  top-middle-square = o: negative
+|  |  |  |  top-middle-square = x
+|  |  |  |  |  bottom-middle-square = b: negative
+|  |  |  |  |  bottom-middle-square = o
+|  |  |  |  |  |  bottom-left-square = b: null
+|  |  |  |  |  |  bottom-left-square = o: positive
+|  |  |  |  |  |  bottom-left-square = x: negative
+|  |  |  |  |  bottom-middle-square = x: positive
+|  |  |  top-right-square = x
+|  |  |  |  bottom-left-square = b: positive
+|  |  |  |  bottom-left-square = o
+|  |  |  |  |  middle-right-square = b: negative
+|  |  |  |  |  middle-right-square = o: negative
+|  |  |  |  |  middle-right-square = x: positive
+|  |  |  |  bottom-left-square = x: positive
+|  top-left-square = x
+|  |  bottom-right-square = b: positive
+|  |  bottom-right-square = o
+|  |  |  top-right-square = b
+|  |  |  |  bottom-left-square = b: positive
+|  |  |  |  bottom-left-square = o
+|  |  |  |  |  bottom-middle-square = b: positive
+|  |  |  |  |  bottom-middle-square = o: negative
+|  |  |  |  |  bottom-middle-square = x: positive
+|  |  |  |  bottom-left-square = x: positive
+|  |  |  top-right-square = o
+|  |  |  |  middle-right-square = b
+|  |  |  |  |  bottom-left-square = b: positive
+|  |  |  |  |  bottom-left-square = o
+|  |  |  |  |  |  middle-left-square = b: positive
+|  |  |  |  |  |  middle-left-square = o: null
+|  |  |  |  |  |  middle-left-square = x: negative
+|  |  |  |  |  bottom-left-square = x: positive
+|  |  |  |  middle-right-square = o: negative
+|  |  |  |  middle-right-square = x
+|  |  |  |  |  middle-left-square = b: negative
+|  |  |  |  |  middle-left-square = o
+|  |  |  |  |  |  bottom-left-square = b: null
+|  |  |  |  |  |  bottom-left-square = o: positive
+|  |  |  |  |  |  bottom-left-square = x: negative
+|  |  |  |  |  middle-left-square = x: positive
+|  |  |  top-right-square = x
+|  |  |  |  bottom-left-square = b: positive
+|  |  |  |  bottom-left-square = o
+|  |  |  |  |  top-middle-square = b: negative
+|  |  |  |  |  top-middle-square = o: negative
+|  |  |  |  |  top-middle-square = x: positive
+|  |  |  |  bottom-left-square = x: positive
+|  |  bottom-right-square = x: positive
+
+Time taken to build model: 0.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         798               83.2985 %
+Incorrectly Classified Instances       133               13.8831 %
+Kappa statistic                          0.689 
+Mean absolute error                      0.1429
+Root mean squared error                  0.378 
+Relative absolute error                 32.3932 %
+Root relative squared error             80.4304 %
+UnClassified Instances                  27                2.8184 %
+Total Number of Instances              958     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.818     0.122      0.782     0.818     0.8        0.841    negative
+                 0.878     0.182      0.9       0.878     0.889      0.836    positive
+Weighted Avg.    0.857     0.161      0.859     0.857     0.858      0.838
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 266  59 |   a = negative
+  74 532 |   b = positive
+

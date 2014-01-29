@@ -1,0 +1,170 @@
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -R -N 3 -Q 1 -M 2
+Relation:     tic-tac-toe
+Instances:    958
+Attributes:   10
+              top-left-square
+              top-middle-square
+              top-right-square
+              middle-left-square
+              middle-middle-square
+              middle-right-square
+              bottom-left-square
+              bottom-middle-square
+              bottom-right-square
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+middle-middle-square = b
+|   top-left-square = b
+|   |   bottom-right-square = b: positive (0.0)
+|   |   bottom-right-square = o: negative (5.0)
+|   |   bottom-right-square = x: positive (12.0)
+|   top-left-square = o
+|   |   bottom-right-square = b: negative (6.0)
+|   |   bottom-right-square = o: negative (4.0)
+|   |   bottom-right-square = x
+|   |   |   bottom-left-square = b
+|   |   |   |   top-right-square = b: negative (0.0)
+|   |   |   |   top-right-square = o: negative (3.0)
+|   |   |   |   top-right-square = x: positive (3.0)
+|   |   |   bottom-left-square = o
+|   |   |   |   middle-left-square = b: positive (2.0)
+|   |   |   |   middle-left-square = o: negative (5.0)
+|   |   |   |   middle-left-square = x: positive (3.0/1.0)
+|   |   |   bottom-left-square = x: positive (11.0)
+|   top-left-square = x
+|   |   bottom-right-square = b: positive (18.0)
+|   |   bottom-right-square = o
+|   |   |   middle-right-square = b: positive (7.0)
+|   |   |   middle-right-square = o
+|   |   |   |   top-right-square = b: positive (1.0)
+|   |   |   |   top-right-square = o: negative (3.0)
+|   |   |   |   top-right-square = x: positive (4.0)
+|   |   |   middle-right-square = x: negative (5.0/2.0)
+|   |   bottom-right-square = x: positive (11.0)
+middle-middle-square = o
+|   bottom-right-square = b
+|   |   top-left-square = b: negative (10.0)
+|   |   top-left-square = o: negative (2.0)
+|   |   top-left-square = x
+|   |   |   top-middle-square = b
+|   |   |   |   bottom-left-square = b: negative (0.0)
+|   |   |   |   bottom-left-square = o: negative (3.0)
+|   |   |   |   bottom-left-square = x: positive (7.0/2.0)
+|   |   |   top-middle-square = o: negative (7.0/1.0)
+|   |   |   top-middle-square = x
+|   |   |   |   top-right-square = b: negative (1.0)
+|   |   |   |   top-right-square = o: negative (5.0/2.0)
+|   |   |   |   top-right-square = x: positive (10.0)
+|   bottom-right-square = o
+|   |   top-left-square = b: negative (2.0)
+|   |   top-left-square = o: negative (36.0)
+|   |   top-left-square = x: positive (36.0/13.0)
+|   bottom-right-square = x
+|   |   bottom-left-square = b
+|   |   |   top-right-square = b: negative (6.0)
+|   |   |   top-right-square = o: negative (3.0)
+|   |   |   top-right-square = x
+|   |   |   |   middle-right-square = b: negative (1.0)
+|   |   |   |   middle-right-square = o: negative (6.0/1.0)
+|   |   |   |   middle-right-square = x: positive (10.0)
+|   |   bottom-left-square = o
+|   |   |   top-right-square = b: negative (2.0)
+|   |   |   top-right-square = o: negative (17.0)
+|   |   |   top-right-square = x: positive (16.0/3.0)
+|   |   bottom-left-square = x
+|   |   |   bottom-middle-square = b
+|   |   |   |   middle-left-square = b: positive (0.0)
+|   |   |   |   middle-left-square = o: negative (4.0/2.0)
+|   |   |   |   middle-left-square = x: positive (3.0)
+|   |   |   bottom-middle-square = o: negative (12.0/4.0)
+|   |   |   bottom-middle-square = x: positive (25.0)
+middle-middle-square = x
+|   bottom-right-square = b
+|   |   top-left-square = b: positive (22.0)
+|   |   top-left-square = o
+|   |   |   bottom-left-square = b: positive (8.0)
+|   |   |   bottom-left-square = o
+|   |   |   |   middle-left-square = b: positive (1.0)
+|   |   |   |   middle-left-square = o: negative (5.0)
+|   |   |   |   middle-left-square = x: positive (5.0)
+|   |   |   bottom-left-square = x: positive (15.0/5.0)
+|   |   top-left-square = x: positive (13.0)
+|   bottom-right-square = o
+|   |   top-left-square = b
+|   |   |   bottom-middle-square = b: positive (8.0/3.0)
+|   |   |   bottom-middle-square = o
+|   |   |   |   bottom-left-square = b: positive (3.0)
+|   |   |   |   bottom-left-square = o: negative (6.0)
+|   |   |   |   bottom-left-square = x: positive (7.0/1.0)
+|   |   |   bottom-middle-square = x: positive (17.0/2.0)
+|   |   top-left-square = o: positive (43.0/6.0)
+|   |   top-left-square = x
+|   |   |   bottom-middle-square = b
+|   |   |   |   top-right-square = b: positive (0.0)
+|   |   |   |   top-right-square = o: negative (3.0/1.0)
+|   |   |   |   top-right-square = x: positive (4.0)
+|   |   |   bottom-middle-square = o
+|   |   |   |   bottom-left-square = b: positive (4.0/1.0)
+|   |   |   |   bottom-left-square = o: negative (11.0)
+|   |   |   |   bottom-left-square = x: positive (6.0/2.0)
+|   |   |   bottom-middle-square = x
+|   |   |   |   top-middle-square = b: negative (3.0)
+|   |   |   |   top-middle-square = o: negative (5.0/2.0)
+|   |   |   |   top-middle-square = x: positive (5.0)
+|   bottom-right-square = x
+|   |   top-left-square = b: positive (14.0)
+|   |   top-left-square = o
+|   |   |   bottom-left-square = b
+|   |   |   |   top-middle-square = b: positive (2.0)
+|   |   |   |   top-middle-square = o: negative (6.0/1.0)
+|   |   |   |   top-middle-square = x: positive (2.0)
+|   |   |   bottom-left-square = o
+|   |   |   |   middle-left-square = b: positive (3.0/1.0)
+|   |   |   |   middle-left-square = o: negative (6.0)
+|   |   |   |   middle-left-square = x: positive (7.0/3.0)
+|   |   |   bottom-left-square = x
+|   |   |   |   middle-left-square = b: positive (4.0)
+|   |   |   |   middle-left-square = o: positive (7.0)
+|   |   |   |   middle-left-square = x: negative (2.0/1.0)
+|   |   top-left-square = x: positive (65.0)
+
+Number of Leaves  : 	77
+
+Size of the tree : 	115
+
+
+Time taken to build model: 0.2 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         798               83.2985 %
+Incorrectly Classified Instances       160               16.7015 %
+Kappa statistic                          0.6243
+Mean absolute error                      0.2105
+Root mean squared error                  0.3589
+Relative absolute error                 46.4753 %
+Root relative squared error             75.4266 %
+Total Number of Instances              958     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.72      0.107      0.781     0.72      0.749      0.872    negative
+                 0.893     0.28       0.857     0.893     0.875      0.872    positive
+Weighted Avg.    0.833     0.22       0.831     0.833     0.831      0.872
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 239  93 |   a = negative
+  67 559 |   b = positive
+

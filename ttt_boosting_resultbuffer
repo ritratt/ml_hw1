@@ -1,0 +1,282 @@
+=== Run information ===
+
+Scheme:weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     tic-tac-toe
+Instances:    958
+Attributes:   10
+              top-left-square
+              top-middle-square
+              top-right-square
+              middle-left-square
+              middle-middle-square
+              middle-right-square
+              bottom-left-square
+              bottom-middle-square
+              bottom-right-square
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+middle-middle-square = o : negative
+middle-middle-square != o : positive
+middle-middle-square is missing : positive
+
+Class distributions
+
+middle-middle-square = o
+negative	positive	
+0.5647058823529412	0.43529411764705883	
+middle-middle-square != o
+negative	positive	
+0.22653721682847897	0.7734627831715211	
+middle-middle-square is missing
+negative	positive	
+0.3465553235908142	0.6534446764091858	
+
+
+Weight: 0.84
+
+Decision Stump
+
+Classifications
+
+bottom-right-square = o : negative
+bottom-right-square != o : positive
+bottom-right-square is missing : positive
+
+Class distributions
+
+bottom-right-square = o
+negative	positive	
+0.5146324157604368	0.48536758423956317	
+bottom-right-square != o
+negative	positive	
+0.31483200297011343	0.6851679970298866	
+bottom-right-square is missing
+negative	positive	
+0.3863391376451079	0.6136608623548921	
+
+
+Weight: 0.51
+
+Decision Stump
+
+Classifications
+
+top-left-square = o : negative
+top-left-square != o : positive
+top-left-square is missing : positive
+
+Class distributions
+
+top-left-square = o
+negative	positive	
+0.5741510425267952	0.42584895747320484	
+top-left-square != o
+negative	positive	
+0.3226088690706007	0.6773911309293994	
+top-left-square is missing
+negative	positive	
+0.4164714603656373	0.5835285396343626	
+
+
+Weight: 0.57
+
+Decision Stump
+
+Classifications
+
+top-right-square = o : negative
+top-right-square != o : positive
+top-right-square is missing : positive
+
+Class distributions
+
+top-right-square = o
+negative	positive	
+0.6046520455032064	0.39534795449679366	
+top-right-square != o
+negative	positive	
+0.35879084247945203	0.6412091575205479	
+top-right-square is missing
+negative	positive	
+0.447665599903347	0.552334400096653	
+
+
+Weight: 0.52
+
+Decision Stump
+
+Classifications
+
+bottom-left-square = o : negative
+bottom-left-square != o : positive
+bottom-left-square is missing : positive
+
+Class distributions
+
+bottom-left-square = o
+negative	positive	
+0.6551064141712938	0.34489358582870633	
+bottom-left-square != o
+negative	positive	
+0.3771451714039282	0.6228548285960717	
+bottom-left-square is missing
+negative	positive	
+0.48194085440328693	0.5180591455967131	
+
+
+Weight: 0.55
+
+Decision Stump
+
+Classifications
+
+middle-middle-square = x : positive
+middle-middle-square != x : negative
+middle-middle-square is missing : negative
+
+Class distributions
+
+middle-middle-square = x
+negative	positive	
+0.4044247309763267	0.5955752690236733	
+middle-middle-square != x
+negative	positive	
+0.5984492381256511	0.4015507618743489	
+middle-middle-square is missing
+negative	positive	
+0.516341731888723	0.483658268111277	
+
+
+Weight: 0.39
+
+Decision Stump
+
+Classifications
+
+bottom-right-square = x : positive
+bottom-right-square != x : negative
+bottom-right-square is missing : negative
+
+Class distributions
+
+bottom-right-square = x
+negative	positive	
+0.44352629459752424	0.5564737054024758	
+bottom-right-square != x
+negative	positive	
+0.5447263352876704	0.4552736647123295	
+bottom-right-square is missing
+negative	positive	
+0.5014582103624455	0.4985417896375545	
+
+
+Weight: 0.2
+
+Decision Stump
+
+Classifications
+
+top-right-square = x : positive
+top-right-square != x : negative
+top-right-square is missing : positive
+
+Class distributions
+
+top-right-square = x
+negative	positive	
+0.43773344688514737	0.5622665531148526	
+top-right-square != x
+negative	positive	
+0.5362534256286717	0.46374657437132816	
+top-right-square is missing
+negative	positive	
+0.4941921405088789	0.5058078594911212	
+
+
+Weight: 0.19
+
+Decision Stump
+
+Classifications
+
+middle-left-square = o : negative
+middle-left-square != o : positive
+middle-left-square is missing : positive
+
+Class distributions
+
+middle-left-square = o
+negative	positive	
+0.5649454818765915	0.4350545181234084	
+middle-left-square != o
+negative	positive	
+0.44934146936645386	0.5506585306335461	
+middle-left-square is missing
+negative	positive	
+0.4871559731139093	0.5128440268860907	
+
+
+Weight: 0.22
+
+Decision Stump
+
+Classifications
+
+bottom-middle-square = o : negative
+bottom-middle-square != o : positive
+bottom-middle-square is missing : negative
+
+Class distributions
+
+bottom-middle-square = o
+negative	positive	
+0.588941419269218	0.41105858073078205	
+bottom-middle-square != o
+negative	positive	
+0.4645762724919179	0.5354237275080821	
+bottom-middle-square is missing
+negative	positive	
+0.5063672892306431	0.4936327107693569	
+
+
+Weight: 0.21
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.13 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         695               72.547  %
+Incorrectly Classified Instances       263               27.453  %
+Kappa statistic                          0.3432
+Mean absolute error                      0.3381
+Root mean squared error                  0.4166
+Relative absolute error                 74.6393 %
+Root relative squared error             87.5379 %
+Total Number of Instances              958     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.44      0.123      0.655     0.44      0.526      0.794    negative
+                 0.877     0.56       0.747     0.877     0.807      0.794    positive
+Weighted Avg.    0.725     0.409      0.715     0.725     0.71       0.794
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 146 186 |   a = negative
+  77 549 |   b = positive
+

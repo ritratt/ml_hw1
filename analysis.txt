@@ -1,0 +1,40 @@
+Dataset: Spambase
+Consists of a bunch of keywords and characters. Each one has associated with it the relative frequency of that word or character in the email and there is the nominal class attribute which tells if the mail is spam or not. 
+
+Algo - Decision Tree
+I tried decision tree with no pruning, some pruning (confidence factor 0.25) and massive pruning (confidence factor 0.0001). Some pruning results in the most accurate result, although the difference is almost negligible. Massive pruning results in the least accuracy because you end up pruning relevant data. The keyword "remove" is chosen as the root node. I could not guage why from looking at the data using naked eye. I guess what happens in code stays in code XD.
+
+Algo - Boosting
+Result: The word "free" earned the least amount of weight (0.025) which makes sense because a spam mail is bound to contain the word free. So, the algorithm doesn't really learn anything new and pretty much classifies a mail correctly as spam when it contains the word "free".
+
+Algo - Boosting vs Decision Tree
+Decision tree seems to have a marginally higher accuracy. The decision tree arrives at a conclusion based on whether a series of keywords exist or not exist. I think this produces a more accurate result because boosting assigns weights based on failed tests. So if a word gets higher weight, it could still go wrong because a series of words tells more about the nature than a single word. For example, if there is the word credit then there is bound to be the word "card". If boosting assigns higher weight to card but lower weight to credit then
+
+Algo - K nearest
+This gives the same accuracy as boosting and hence lower than decision tree.
+
+Real world intestingness of data:
+Spam! We all hate it. We all want to get rid of it. This dataset is all about that. This dataset lists some keywords and lets us apply algorithms to them based on these keyword and character frequencies. 
+
+Machine Learning interestingness:
+Turns out machine learning can classify spam based on just these few keywords with at least 90% accuracy! Makes sense, because I hardly see spam in my main mail folder. It is always classified correctly as spam. There are 7% false positives. Checked my spam folder and this does not seem to happen at all. This is because my mail client uses a LOT of attributes to classify which are absent in this dataset. 
+This dataset is also able to show us the difference between algorithms to some extent and kind of conform to the real machine learning algorithm (our brain :P) and its intuition!
+
+Dataset: Tic Tac Toe
+
+Algo - Decision Tree
+-The decision tree gets 85% accuracy without Error-Reducing pruning. This goes DOWN when I used pruning with a confidence factor of 0.1. This is very weird since pruning is supposed to reduce error. This might mean that there is no overfitting possible in the tic tac toe problem. Any kind of pruning only results in reduction of testing data and results in reduction accuracy. This is the only explanation that makes sense.
+-Also, the root node is the middle-middle square. This is correct because it results in the highest information gain. Most of the wins consist of the middle-middle square. If the player does not fill this square up first then it is very like that the player will lose.
+-
+
+Algo - Boosting
+Middle-middle square = o has more weight than middle-middle square = x. This is correct because if the middle square is x then the player usually wins. So the algorithm learns nothing from this. Middle-middle square = o, on the other hand, has equal probability (almost) of winning or losing. So learning is difficult on this attribute and hence is given the highest weight!
+-Also note that symmetrically equivalent squares are assigned the same weight. e.g bottom-left and bottom-right have pretty much the same weight. 
+
+Algo - Boosting vs Decision Tree:
+Decision tree achieves marginally better accuracy (4%) than boosting. This is probably because, as mentioned earlier, this data does not seem susceptible to overfitting. And since boosting works better by reducing error from overfitting, it doesn't really increase accuracy.
+
+Algo - k nearest neighbor (and a comparison with decision tree and boosting):
+-This gives ridiculously high accuracy. It gives almost as much as a neural network. This makes sense because the game has only a set number of scenarios. A lazy learner, when faced with a particular board setting, pretty much knows all the possible board settings and can classify correspondingly if the result very accurately. 
+-This algo takes the least time to run. Of course, since it is the simplest of them all. All calculations are deferred till the classification.
+-The confusion matrix shows that the algorithm is more confused while classifying losses than wins. One reason for this is that the wins are higher than losses. Why else would the algorithm classify a board as loss when it is actually going to win? As per the algo, it takes a vote or average over k nearest neighbors. The data shows that in case of wins, this is more uniformly distributed than for losses. In terms of the game, when you lose you can't turn it around. But a winner can turn it around which is why the error.

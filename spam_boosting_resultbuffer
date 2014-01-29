@@ -1,0 +1,330 @@
+=== Run information ===
+
+Scheme:weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.trees.DecisionStump
+Relation:     spambase
+Instances:    4601
+Attributes:   58
+              word_freq_make
+              word_freq_address
+              word_freq_all
+              word_freq_3d
+              word_freq_our
+              word_freq_over
+              word_freq_remove
+              word_freq_internet
+              word_freq_order
+              word_freq_mail
+              word_freq_receive
+              word_freq_will
+              word_freq_people
+              word_freq_report
+              word_freq_addresses
+              word_freq_free
+              word_freq_business
+              word_freq_email
+              word_freq_you
+              word_freq_credit
+              word_freq_your
+              word_freq_font
+              word_freq_000
+              word_freq_money
+              word_freq_hp
+              word_freq_hpl
+              word_freq_george
+              word_freq_650
+              word_freq_lab
+              word_freq_labs
+              word_freq_telnet
+              word_freq_857
+              word_freq_data
+              word_freq_415
+              word_freq_85
+              word_freq_technology
+              word_freq_1999
+              word_freq_parts
+              word_freq_pm
+              word_freq_direct
+              word_freq_cs
+              word_freq_meeting
+              word_freq_original
+              word_freq_project
+              word_freq_re
+              word_freq_edu
+              word_freq_table
+              word_freq_conference
+              char_freq_;
+              char_freq_(
+              char_freq_[
+              char_freq_!
+              char_freq_$
+              char_freq_#
+              capital_run_length_average
+              capital_run_length_longest
+              capital_run_length_total
+              class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+char_freq_$ <= 0.0555 : 0
+char_freq_$ > 0.0555 : 1
+char_freq_$ is missing : 0
+
+Class distributions
+
+char_freq_$ <= 0.0555
+0	1	
+0.7649092480553155	0.23509075194468454	
+char_freq_$ > 0.0555
+0	1	
+0.11769911504424779	0.8823008849557522	
+char_freq_$ is missing
+0	1	
+0.6059552271245382	0.39404477287546186	
+
+
+Weight: 1.35
+
+Decision Stump
+
+Classifications
+
+char_freq_! <= 0.0795 : 0
+char_freq_! > 0.0795 : 1
+char_freq_! is missing : 1
+
+Class distributions
+
+char_freq_! <= 0.0795
+0	1	
+0.698086594536688	0.3019134054633121	
+char_freq_! > 0.0795
+0	1	
+0.17541111936558654	0.8245888806344135	
+char_freq_! is missing
+0	1	
+0.4335732142094604	0.5664267857905396	
+
+
+Weight: 1.16
+
+Decision Stump
+
+Classifications
+
+word_freq_hp <= 0.12 : 1
+word_freq_hp > 0.12 : 0
+word_freq_hp is missing : 1
+
+Class distributions
+
+word_freq_hp <= 0.12
+0	1	
+0.31560256389024854	0.6843974361097515	
+word_freq_hp > 0.12
+0	1	
+0.8994662137593606	0.10053378624063933	
+word_freq_hp is missing
+0	1	
+0.41279411300646607	0.5872058869935338	
+
+
+Weight: 0.95
+
+Decision Stump
+
+Classifications
+
+word_freq_remove <= 0.01 : 0
+word_freq_remove > 0.01 : 1
+word_freq_remove is missing : 0
+
+Class distributions
+
+word_freq_remove <= 0.01
+0	1	
+0.6738710286758511	0.3261289713241488	
+word_freq_remove > 0.01
+0	1	
+0.09348901276139547	0.9065109872386046	
+word_freq_remove is missing
+0	1	
+0.5740435242880383	0.42595647571196177	
+
+
+Weight: 0.91
+
+Decision Stump
+
+Classifications
+
+word_freq_george <= 0.005 : 1
+word_freq_george > 0.005 : 0
+word_freq_george is missing : 1
+
+Class distributions
+
+word_freq_george <= 0.005
+0	1	
+0.3619097790488549	0.6380902209511452	
+word_freq_george > 0.005
+0	1	
+0.9870309168919121	0.01296908310808781	
+word_freq_george is missing
+0	1	
+0.4188943405123179	0.5811056594876822	
+
+
+Weight: 0.71
+
+Decision Stump
+
+Classifications
+
+capital_run_length_longest <= 9.5 : 0
+capital_run_length_longest > 9.5 : 1
+capital_run_length_longest is missing : 0
+
+Class distributions
+
+capital_run_length_longest <= 9.5
+0	1	
+0.8031277777040784	0.19687222229592152	
+capital_run_length_longest > 9.5
+0	1	
+0.4323943879494128	0.5676056120505871	
+capital_run_length_longest is missing
+0	1	
+0.5653652511828715	0.43463474881712844	
+
+
+Weight: 0.63
+
+Decision Stump
+
+Classifications
+
+word_freq_edu <= 0.08499999999999999 : 0
+word_freq_edu > 0.08499999999999999 : 0
+word_freq_edu is missing : 0
+
+Class distributions
+
+word_freq_edu <= 0.08499999999999999
+0	1	
+0.5630424546492327	0.4369575453507673	
+word_freq_edu > 0.08499999999999999
+0	1	
+0.9055522793007229	0.0944477206992771	
+word_freq_edu is missing
+0	1	
+0.6193983096737009	0.38060169032629904	
+
+
+Weight: 0.49
+
+Decision Stump
+
+Classifications
+
+word_freq_edu <= 0.08499999999999999 : 1
+word_freq_edu > 0.08499999999999999 : 0
+word_freq_edu is missing : 1
+
+Class distributions
+
+word_freq_edu <= 0.08499999999999999
+0	1	
+0.4418946719859179	0.5581053280140821	
+word_freq_edu > 0.08499999999999999
+0	1	
+0.8548928131239172	0.14510718687608282	
+word_freq_edu is missing
+0	1	
+0.49999999999998695	0.5000000000000131	
+
+
+Weight: 0.4
+
+Decision Stump
+
+Classifications
+
+word_freq_free <= 0.025 : 0
+word_freq_free > 0.025 : 1
+word_freq_free is missing : 0
+
+Class distributions
+
+word_freq_free <= 0.025
+0	1	
+0.6625914063996259	0.3374085936003741	
+word_freq_free > 0.025
+0	1	
+0.3535426441697416	0.6464573558302583	
+word_freq_free is missing
+0	1	
+0.574743077504091	0.42525692249590896	
+
+
+Weight: 0.65
+
+Decision Stump
+
+Classifications
+
+word_freq_1999 <= 0.065 : 1
+word_freq_1999 > 0.065 : 0
+word_freq_1999 is missing : 0
+
+Class distributions
+
+word_freq_1999 <= 0.065
+0	1	
+0.4512858644540376	0.5487141355459624	
+word_freq_1999 > 0.065
+0	1	
+0.8156355256218327	0.18436447437816716	
+word_freq_1999 is missing
+0	1	
+0.5072934006989744	0.4927065993010256	
+
+
+Weight: 0.36
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 10.22 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4144               90.0674 %
+Incorrectly Classified Instances       457                9.9326 %
+Kappa statistic                          0.7913
+Mean absolute error                      0.1502
+Root mean squared error                  0.2744
+Relative absolute error                 31.448  %
+Root relative squared error             56.1651 %
+Total Number of Instances             4601     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.925     0.136      0.913     0.925     0.919      0.959    0
+                 0.864     0.075      0.882     0.864     0.873      0.959    1
+Weighted Avg.    0.901     0.112      0.9       0.901     0.9        0.959
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 2578  210 |    a = 0
+  247 1566 |    b = 1
+

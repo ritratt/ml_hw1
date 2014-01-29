@@ -1,0 +1,509 @@
+=== Run information ===
+
+Scheme:weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     tic-tac-toe
+Instances:    958
+Attributes:   10
+              top-left-square
+              top-middle-square
+              top-right-square
+              middle-left-square
+              middle-middle-square
+              middle-right-square
+              bottom-left-square
+              bottom-middle-square
+              bottom-right-square
+              Class
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    3.3631432598638584
+    Node 2    -6.4763512470643
+    Node 3    -3.3384500570958457
+    Node 4    2.364824868579989
+    Node 5    -2.790159244472123
+    Node 6    -2.0097753632855113
+    Node 7    -3.58766969938149
+    Node 8    -4.083380712403431
+    Node 9    -3.3611158627841795
+    Node 10    3.5259478780456113
+    Node 11    7.542800971639513
+    Node 12    0.6051241890468636
+    Node 13    6.819490682599305
+    Node 14    -2.6241189248354106
+    Node 15    -2.2334306991913055
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.3536303165818326
+    Node 2    6.477286057819492
+    Node 3    3.335613561493448
+    Node 4    -2.370326248505393
+    Node 5    2.7831798130887195
+    Node 6    2.027031113326076
+    Node 7    3.5752439656647748
+    Node 8    4.089855535088291
+    Node 9    3.375917646850923
+    Node 10    -3.5380421357973777
+    Node 11    -7.540471567803975
+    Node 12    -0.6176548587907363
+    Node 13    -6.819842584010512
+    Node 14    2.6246279678407025
+    Node 15    2.2137841115981
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.7179854305129798
+    Attrib top-left-square=b    -0.07071317768211344
+    Attrib top-left-square=o    -2.7729233752404654
+    Attrib top-left-square=x    3.445973138087133
+    Attrib top-middle-square=b    0.08381262619924255
+    Attrib top-middle-square=o    -2.103725664176195
+    Attrib top-middle-square=x    2.7583043478259266
+    Attrib top-right-square=b    0.003342401328471804
+    Attrib top-right-square=o    -2.1662728196615895
+    Attrib top-right-square=x    2.8730115645037184
+    Attrib middle-left-square=b    -0.24114519699174758
+    Attrib middle-left-square=o    -0.9234007001510927
+    Attrib middle-left-square=x    1.891208787410511
+    Attrib middle-middle-square=b    0.10514313937619146
+    Attrib middle-middle-square=o    -2.2469865028799227
+    Attrib middle-middle-square=x    2.859361730139257
+    Attrib middle-right-square=b    -0.22281931481885695
+    Attrib middle-right-square=o    -2.7521034324611593
+    Attrib middle-right-square=x    3.685732870393853
+    Attrib bottom-left-square=b    0.22609964293664067
+    Attrib bottom-left-square=o    -2.0045108951798123
+    Attrib bottom-left-square=x    2.513332147676479
+    Attrib bottom-middle-square=b    0.013303318882805549
+    Attrib bottom-middle-square=o    -1.9918686617957935
+    Attrib bottom-middle-square=x    2.5940409665990383
+    Attrib bottom-right-square=b    0.004097497040580419
+    Attrib bottom-right-square=o    -1.143994234743619
+    Attrib bottom-right-square=x    1.8870284892942117
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.07343429029923089
+    Attrib top-left-square=b    0.5476663602589043
+    Attrib top-left-square=o    -0.598200047510591
+    Attrib top-left-square=x    0.1817119987666165
+    Attrib top-middle-square=b    0.43123025666130604
+    Attrib top-middle-square=o    -1.6714822106137033
+    Attrib top-middle-square=x    1.3057877598346952
+    Attrib top-right-square=b    0.5247387272797018
+    Attrib top-right-square=o    -1.7740144389752168
+    Attrib top-right-square=x    1.333926166974137
+    Attrib middle-left-square=b    0.4435911531246446
+    Attrib middle-left-square=o    -0.6487433982385546
+    Attrib middle-left-square=x    0.28999615148475594
+    Attrib middle-middle-square=b    0.48289440882057016
+    Attrib middle-middle-square=o    -0.3738883230821356
+    Attrib middle-middle-square=x    -0.03245950749027518
+    Attrib middle-right-square=b    0.5020315987899341
+    Attrib middle-right-square=o    -1.020297268158651
+    Attrib middle-right-square=x    0.662396387199344
+    Attrib bottom-left-square=b    0.5269893334908118
+    Attrib bottom-left-square=o    -2.5570219007330404
+    Attrib bottom-left-square=x    2.14510743450855
+    Attrib bottom-middle-square=b    0.34030532265948304
+    Attrib bottom-middle-square=o    -2.1338934857154275
+    Attrib bottom-middle-square=x    1.8908511927935827
+    Attrib bottom-right-square=b    0.5606985938421895
+    Attrib bottom-right-square=o    0.008423762965457122
+    Attrib bottom-right-square=x    -0.40468509522710255
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.14885730622677132
+    Attrib top-left-square=b    0.09517390211518811
+    Attrib top-left-square=o    0.5043653254325899
+    Attrib top-left-square=x    -0.5262794545307571
+    Attrib top-middle-square=b    0.3590453292920812
+    Attrib top-middle-square=o    1.0080252098284395
+    Attrib top-middle-square=x    -1.0661445910591552
+    Attrib top-right-square=b    0.09008267194280675
+    Attrib top-right-square=o    -0.2985447937897137
+    Attrib top-right-square=x    0.41715300587563586
+    Attrib middle-left-square=b    0.3149471846203928
+    Attrib middle-left-square=o    0.580615554007254
+    Attrib middle-left-square=x    -0.6697301031987863
+    Attrib middle-middle-square=b    0.17024322315034257
+    Attrib middle-middle-square=o    0.56318577422438
+    Attrib middle-middle-square=x    -0.5989833499116329
+    Attrib middle-right-square=b    0.3317369259844791
+    Attrib middle-right-square=o    0.2726431399246093
+    Attrib middle-right-square=x    -0.329727149942356
+    Attrib bottom-left-square=b    0.2648369258127044
+    Attrib bottom-left-square=o    1.0244980993195785
+    Attrib bottom-left-square=x    -1.1555740332279023
+    Attrib bottom-middle-square=b    0.024763315183995455
+    Attrib bottom-middle-square=o    -0.4531767519240943
+    Attrib bottom-middle-square=x    0.6084283116883022
+    Attrib bottom-right-square=b    0.4766319134287474
+    Attrib bottom-right-square=o    0.14103993566242803
+    Attrib bottom-right-square=x    -0.3769175699772548
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -0.18339335257718742
+    Attrib top-left-square=b    0.5337736831584059
+    Attrib top-left-square=o    0.14679124681841582
+    Attrib top-left-square=x    -0.41856306580527014
+    Attrib top-middle-square=b    0.8102442621730886
+    Attrib top-middle-square=o    0.5380652031600812
+    Attrib top-middle-square=x    -1.1600859329775985
+    Attrib top-right-square=b    0.5639795492433564
+    Attrib top-right-square=o    0.1553653810459493
+    Attrib top-right-square=x    -0.5840640766559284
+    Attrib middle-left-square=b    0.4192821616263149
+    Attrib middle-left-square=o    -1.0406995159929668
+    Attrib middle-left-square=x    0.8273765451462892
+    Attrib middle-middle-square=b    0.4088363962651542
+    Attrib middle-middle-square=o    -1.0473344360463341
+    Attrib middle-middle-square=x    0.8572509704489137
+    Attrib middle-right-square=b    0.4821948408075085
+    Attrib middle-right-square=o    -1.0095413049799902
+    Attrib middle-right-square=x    0.7961056224933435
+    Attrib bottom-left-square=b    0.13482616376348694
+    Attrib bottom-left-square=o    -1.6606172754834991
+    Attrib bottom-left-square=x    1.7627221807032407
+    Attrib bottom-middle-square=b    0.6706504934605708
+    Attrib bottom-middle-square=o    -1.792710085848583
+    Attrib bottom-middle-square=x    1.3706572372872905
+    Attrib bottom-right-square=b    0.29932606083625657
+    Attrib bottom-right-square=o    -0.6118989270249403
+    Attrib bottom-right-square=x    0.5148639788615702
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.4346320257956613
+    Attrib top-left-square=b    0.4684480245022671
+    Attrib top-left-square=o    -1.3071223161434262
+    Attrib top-left-square=x    1.2941144645576175
+    Attrib top-middle-square=b    0.2908957375243132
+    Attrib top-middle-square=o    0.382369052008939
+    Attrib top-middle-square=x    -0.2864769405147322
+    Attrib top-right-square=b    0.6051491440266444
+    Attrib top-right-square=o    -0.7191699491741566
+    Attrib top-right-square=x    0.5655295905161057
+    Attrib middle-left-square=b    0.4925655197697704
+    Attrib middle-left-square=o    -0.6869251835571147
+    Attrib middle-left-square=x    0.6610754800066077
+    Attrib middle-middle-square=b    0.37443541895748056
+    Attrib middle-middle-square=o    -0.512374168520668
+    Attrib middle-middle-square=x    0.610600656419983
+    Attrib middle-right-square=b    0.4814378687214243
+    Attrib middle-right-square=o    1.4236913212299597E-4
+    Attrib middle-right-square=x    0.03605318418792125
+    Attrib bottom-left-square=b    0.525662098060491
+    Attrib bottom-left-square=o    -1.5992326290169794
+    Attrib bottom-left-square=x    1.4608685863883135
+    Attrib bottom-middle-square=b    0.41594493015291517
+    Attrib bottom-middle-square=o    0.06366892259322117
+    Attrib bottom-middle-square=x    0.06456568609707411
+    Attrib bottom-right-square=b    0.5705549897182679
+    Attrib bottom-right-square=o    -0.93256700418951
+    Attrib bottom-right-square=x    0.7650290276155302
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.23589918423605097
+    Attrib top-left-square=b    0.673188933228828
+    Attrib top-left-square=o    -2.114926332364959
+    Attrib top-left-square=x    1.6094463839628967
+    Attrib top-middle-square=b    0.5876765337932629
+    Attrib top-middle-square=o    -2.072690544056202
+    Attrib top-middle-square=x    1.6654832079490682
+    Attrib top-right-square=b    0.602672260371933
+    Attrib top-right-square=o    0.07771013420182434
+    Attrib top-right-square=x    -0.5140206970426356
+    Attrib middle-left-square=b    1.0422616682065435
+    Attrib middle-left-square=o    -2.5959753464152344
+    Attrib middle-left-square=x    1.8553562371384174
+    Attrib middle-middle-square=b    0.27054310736319914
+    Attrib middle-middle-square=o    -0.8810858801410366
+    Attrib middle-middle-square=x    0.8962752115202267
+    Attrib middle-right-square=b    0.7034770082282241
+    Attrib middle-right-square=o    -0.889782056285871
+    Attrib middle-right-square=x    0.3167748843695901
+    Attrib bottom-left-square=b    0.5403055771761656
+    Attrib bottom-left-square=o    -0.2541642382813922
+    Attrib bottom-left-square=x    0.0254124128155165
+    Attrib bottom-middle-square=b    0.8967921183634652
+    Attrib bottom-middle-square=o    -1.4825442996391027
+    Attrib bottom-middle-square=x    0.8342956594243593
+    Attrib bottom-right-square=b    0.5819943511673995
+    Attrib bottom-right-square=o    -0.8198784830215314
+    Attrib bottom-right-square=x    0.44599967291215054
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.4643342924555154
+    Attrib top-left-square=b    0.709591227477912
+    Attrib top-left-square=o    -0.5287779521451093
+    Attrib top-left-square=x    0.16246656047504074
+    Attrib top-middle-square=b    0.6240552733931274
+    Attrib top-middle-square=o    -1.0717016929170358
+    Attrib top-middle-square=x    0.914188538051649
+    Attrib top-right-square=b    0.822221953859962
+    Attrib top-right-square=o    0.5417371168534469
+    Attrib top-right-square=x    -0.9518493920273797
+    Attrib middle-left-square=b    0.5528873401894244
+    Attrib middle-left-square=o    -2.170480654836168
+    Attrib middle-left-square=x    2.090427083295858
+    Attrib middle-middle-square=b    0.4335694478770694
+    Attrib middle-middle-square=o    -0.7385293813471836
+    Attrib middle-middle-square=x    0.784979740164206
+    Attrib middle-right-square=b    0.6562500241021447
+    Attrib middle-right-square=o    -2.8451920455338913
+    Attrib middle-right-square=x    2.6587756968321457
+    Attrib bottom-left-square=b    0.4896449467145074
+    Attrib bottom-left-square=o    -0.19562748623710619
+    Attrib bottom-left-square=x    0.2059996107489963
+    Attrib bottom-middle-square=b    0.5991989544024028
+    Attrib bottom-middle-square=o    -1.8042034243611202
+    Attrib bottom-middle-square=x    1.542084873090304
+    Attrib bottom-right-square=b    0.5506697117594342
+    Attrib bottom-right-square=o    -1.683985517998136
+    Attrib bottom-right-square=x    1.5726055985747334
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -0.18822557625981007
+    Attrib top-left-square=b    0.5170001643979327
+    Attrib top-left-square=o    -1.2290558385022912
+    Attrib top-left-square=x    0.8858133178054606
+    Attrib top-middle-square=b    0.5861151873513604
+    Attrib top-middle-square=o    -1.9712915668939863
+    Attrib top-middle-square=x    1.579694910546843
+    Attrib top-right-square=b    0.3457800376685062
+    Attrib top-right-square=o    -2.0175401540733437
+    Attrib top-right-square=x    1.8995027329792318
+    Attrib middle-left-square=b    0.8202135416449843
+    Attrib middle-left-square=o    -0.09382566178514594
+    Attrib middle-left-square=x    -0.5429941585642641
+    Attrib middle-middle-square=b    0.5228383718862688
+    Attrib middle-middle-square=o    -0.8952882919710566
+    Attrib middle-middle-square=x    0.4393110286883091
+    Attrib middle-right-square=b    1.0509784135959994
+    Attrib middle-right-square=o    -1.3974159195118685
+    Attrib middle-right-square=x    0.5749944683743433
+    Attrib bottom-left-square=b    0.7042990861149545
+    Attrib bottom-left-square=o    -0.3524680550031596
+    Attrib bottom-left-square=x    -0.12417297463843636
+    Attrib bottom-middle-square=b    0.5543044392403103
+    Attrib bottom-middle-square=o    -0.8610220359050994
+    Attrib bottom-middle-square=x    0.5159394973464412
+    Attrib bottom-right-square=b    0.373441657641634
+    Attrib bottom-right-square=o    -1.4384435454157372
+    Attrib bottom-right-square=x    1.1781534613121998
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.25395632141647795
+    Attrib top-left-square=b    0.5317785541709722
+    Attrib top-left-square=o    1.368483894747453
+    Attrib top-left-square=x    -1.6771764418446176
+    Attrib top-middle-square=b    -0.20139324462004032
+    Attrib top-middle-square=o    -0.017740534268927063
+    Attrib top-middle-square=x    0.40340257059670886
+    Attrib top-right-square=b    0.31567616100507984
+    Attrib top-right-square=o    0.6202796041908504
+    Attrib top-right-square=x    -0.755134180412466
+    Attrib middle-left-square=b    0.16354883863681627
+    Attrib middle-left-square=o    0.7940509886731623
+    Attrib middle-left-square=x    -0.752187490648993
+    Attrib middle-middle-square=b    0.34647002429331153
+    Attrib middle-middle-square=o    1.0632280627728536
+    Attrib middle-middle-square=x    -1.208430271054597
+    Attrib middle-right-square=b    0.5486392899637557
+    Attrib middle-right-square=o    0.4668386930882715
+    Attrib middle-right-square=x    -0.8164487090030812
+    Attrib bottom-left-square=b    0.12545865925216365
+    Attrib bottom-left-square=o    1.013218358543372
+    Attrib bottom-left-square=x    -0.9251705434153056
+    Attrib bottom-middle-square=b    0.5037586969622949
+    Attrib bottom-middle-square=o    1.614658963322225
+    Attrib bottom-middle-square=x    -1.9194297151442556
+    Attrib bottom-right-square=b    0.015057314177324749
+    Attrib bottom-right-square=o    -0.059798031869881876
+    Attrib bottom-right-square=x    0.1917748935933014
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    0.6228694219375207
+    Attrib top-left-square=b    0.043515358805467384
+    Attrib top-left-square=o    1.7333602867580022
+    Attrib top-left-square=x    -2.5188627697067267
+    Attrib top-middle-square=b    0.15781314967994892
+    Attrib top-middle-square=o    1.7198350493819756
+    Attrib top-middle-square=x    -2.4946479814027893
+    Attrib top-right-square=b    -0.17080496751065224
+    Attrib top-right-square=o    2.647680053776551
+    Attrib top-right-square=x    -3.0786466502547074
+    Attrib middle-left-square=b    0.028928077355792586
+    Attrib middle-left-square=o    2.277319089280773
+    Attrib middle-left-square=x    -2.99008041913592
+    Attrib middle-middle-square=b    -0.13785162114674515
+    Attrib middle-middle-square=o    2.1473788164818575
+    Attrib middle-middle-square=x    -2.629891657794621
+    Attrib middle-right-square=b    -0.0704817177789351
+    Attrib middle-right-square=o    0.9355032654909315
+    Attrib middle-right-square=x    -1.5280205488101137
+    Attrib bottom-left-square=b    -0.21315234245289869
+    Attrib bottom-left-square=o    1.1583277322775813
+    Attrib bottom-left-square=x    -1.608011319729062
+    Attrib bottom-middle-square=b    -0.121234308206762
+    Attrib bottom-middle-square=o    1.758487484372962
+    Attrib bottom-middle-square=x    -2.419685143761684
+    Attrib bottom-right-square=b    0.10054109557475151
+    Attrib bottom-right-square=o    1.8353030620922461
+    Attrib bottom-right-square=x    -2.6360868906088704
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.0885908944190157
+    Attrib top-left-square=b    0.11681814217708682
+    Attrib top-left-square=o    -0.1315109765888819
+    Attrib top-left-square=x    0.25070761197211194
+    Attrib top-middle-square=b    0.11792931582595692
+    Attrib top-middle-square=o    0.07245544587786894
+    Attrib top-middle-square=x    -0.10496486752969188
+    Attrib top-right-square=b    0.040128474886057836
+    Attrib top-right-square=o    0.18914635855198386
+    Attrib top-right-square=x    -0.07847730161898617
+    Attrib middle-left-square=b    0.0941326195640039
+    Attrib middle-left-square=o    0.15380349271400084
+    Attrib middle-left-square=x    -0.15706344106629092
+    Attrib middle-middle-square=b    0.11011960680406385
+    Attrib middle-middle-square=o    -0.13837086715677008
+    Attrib middle-middle-square=x    0.1977751761861992
+    Attrib middle-right-square=b    0.04814187825806581
+    Attrib middle-right-square=o    -0.08540308013177339
+    Attrib middle-right-square=x    0.2494555605444449
+    Attrib bottom-left-square=b    0.032160525218408634
+    Attrib bottom-left-square=o    0.04143206921617003
+    Attrib bottom-left-square=x    0.056164783490725095
+    Attrib bottom-middle-square=b    0.10711196853230476
+    Attrib bottom-middle-square=o    0.07233051270610605
+    Attrib bottom-middle-square=x    0.023234113356169966
+    Attrib bottom-right-square=b    0.04122343168185234
+    Attrib bottom-right-square=o    0.261619413393241
+    Attrib bottom-right-square=x    -0.29815774271186213
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    0.5813680921071611
+    Attrib top-left-square=b    -0.0812313745822716
+    Attrib top-left-square=o    1.177861389295192
+    Attrib top-left-square=x    -1.6491241771851617
+    Attrib top-middle-square=b    0.10447072131346742
+    Attrib top-middle-square=o    2.4518042411577197
+    Attrib top-middle-square=x    -3.088263263878098
+    Attrib top-right-square=b    0.07935059295318021
+    Attrib top-right-square=o    1.9183610146884373
+    Attrib top-right-square=x    -2.5725747856105423
+    Attrib middle-left-square=b    0.01934574694092367
+    Attrib middle-left-square=o    1.628676441490365
+    Attrib middle-left-square=x    -2.33030817385839
+    Attrib middle-middle-square=b    -0.06842812702500722
+    Attrib middle-middle-square=o    2.1386228938662004
+    Attrib middle-middle-square=x    -2.658570188713884
+    Attrib middle-right-square=b    -0.15012904244309197
+    Attrib middle-right-square=o    1.9622870109631165
+    Attrib middle-right-square=x    -2.4543270943552904
+    Attrib bottom-left-square=b    -0.16040755151302696
+    Attrib bottom-left-square=o    1.9298639817658114
+    Attrib bottom-left-square=x    -2.35115412983165
+    Attrib bottom-middle-square=b    0.15109885083938118
+    Attrib bottom-middle-square=o    1.0335805946951155
+    Attrib bottom-middle-square=x    -1.7180768557636825
+    Attrib bottom-right-square=b    -0.15662727162801718
+    Attrib bottom-right-square=o    2.7485493183547667
+    Attrib bottom-right-square=x    -3.244053363484307
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -0.46965804568045855
+    Attrib top-left-square=b    0.6668000994740978
+    Attrib top-left-square=o    -1.3502919482051157
+    Attrib top-left-square=x    1.1256279162681426
+    Attrib top-middle-square=b    0.7255761566829929
+    Attrib top-middle-square=o    0.2619461820829891
+    Attrib top-middle-square=x    -0.5526657563076544
+    Attrib top-right-square=b    0.733143376259709
+    Attrib top-right-square=o    -0.43302494718013945
+    Attrib top-right-square=x    0.09654357093513502
+    Attrib middle-left-square=b    0.8243371444124292
+    Attrib middle-left-square=o    -1.2174971172209605
+    Attrib middle-left-square=x    0.9262213868164327
+    Attrib middle-middle-square=b    0.5074830764820404
+    Attrib middle-middle-square=o    -0.552904298218319
+    Attrib middle-middle-square=x    0.4666501542088483
+    Attrib middle-right-square=b    0.7616503694253219
+    Attrib middle-right-square=o    -0.2229083603793555
+    Attrib middle-right-square=x    -0.15607603856060456
+    Attrib bottom-left-square=b    0.16557098484553032
+    Attrib bottom-left-square=o    -2.025119921227408
+    Attrib bottom-left-square=x    2.3169005490803705
+    Attrib bottom-middle-square=b    0.5097486526092744
+    Attrib bottom-middle-square=o    -0.5625206187898464
+    Attrib bottom-middle-square=x    0.51875260584978
+    Attrib bottom-right-square=b    0.5415235562878392
+    Attrib bottom-right-square=o    -1.032668487055087
+    Attrib bottom-right-square=x    0.9074700541793046
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    -0.300035363850186
+    Attrib top-left-square=b    0.4447974160687309
+    Attrib top-left-square=o    -0.8042081245810688
+    Attrib top-left-square=x    0.6681508651780506
+    Attrib top-middle-square=b    0.5991764883104255
+    Attrib top-middle-square=o    0.07131272079315351
+    Attrib top-middle-square=x    -0.37514995781709387
+    Attrib top-right-square=b    0.5042559116531138
+    Attrib top-right-square=o    -1.3004203843521231
+    Attrib top-right-square=x    1.1766490839129966
+    Attrib middle-left-square=b    0.4029810704357141
+    Attrib middle-left-square=o    0.12890802143278574
+    Attrib middle-left-square=x    -0.28844915830204915
+    Attrib middle-middle-square=b    0.5258132789232449
+    Attrib middle-middle-square=o    -0.6262783717528386
+    Attrib middle-middle-square=x    0.341107786212361
+    Attrib middle-right-square=b    0.3159411890423771
+    Attrib middle-right-square=o    -0.5048251094454977
+    Attrib middle-right-square=x    0.6007309302815302
+    Attrib bottom-left-square=b    0.5053885792205424
+    Attrib bottom-left-square=o    -0.9366339298088459
+    Attrib bottom-left-square=x    0.7738280159110357
+    Attrib bottom-middle-square=b    0.395271885890831
+    Attrib bottom-middle-square=o    -0.07536747881035265
+    Attrib bottom-middle-square=x    -0.0990074676225206
+    Attrib bottom-right-square=b    0.3884902447231366
+    Attrib bottom-right-square=o    -1.5665884639504288
+    Attrib bottom-right-square=x    1.4520876608315936
+Class negative
+    Input
+    Node 0
+Class positive
+    Input
+    Node 1
+
+
+Time taken to build model: 49.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         933               97.3904 %
+Incorrectly Classified Instances        25                2.6096 %
+Kappa statistic                          0.9424
+Mean absolute error                      0.0321
+Root mean squared error                  0.1455
+Relative absolute error                  7.0857 %
+Root relative squared error             30.5772 %
+Total Number of Instances              958     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.964     0.021      0.961     0.964     0.962      0.995    negative
+                 0.979     0.036      0.981     0.979     0.98       0.995    positive
+Weighted Avg.    0.974     0.031      0.974     0.974     0.974      0.995
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 320  12 |   a = negative
+  13 613 |   b = positive
+
